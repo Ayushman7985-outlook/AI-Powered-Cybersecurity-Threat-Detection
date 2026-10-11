@@ -1,0 +1,114 @@
+[
+  {
+    "scenario": "normal_dataset_record",
+    "source_type": "dataset",
+    "expected_label": 0,
+    "predicted_label": 1,
+    "prediction": "attack",
+    "confidence": 0.7406363636363635,
+    "attack_probability": 0.7406363636363635,
+    "probability_is_calibrated": false,
+    "alert": {
+      "alert_id": "64b848c1-5a01-4282-9031-85c4229887aa",
+      "timestamp": "2026-10-11T06:18:55.283597+00:00",
+      "predicted_label": 1,
+      "prediction": "attack",
+      "severity": "medium",
+      "confidence": 0.7406363636363635,
+      "attack_probability": 0.7406363636363635,
+      "detection_method": "supervised_random_forest",
+      "source_type": "dataset",
+      "explanation": "The supervised model classified this record as attack traffic. The confidence tier is a demonstration rule, not calibrated SOC severity."
+    }
+  },
+  {
+    "scenario": "dos_dataset_record",
+    "source_type": "dataset",
+    "expected_label": 1,
+    "predicted_label": 1,
+    "prediction": "attack",
+    "confidence": 1.0,
+    "attack_probability": 1.0,
+    "probability_is_calibrated": false,
+    "alert": {
+      "alert_id": "17f95200-b57d-47a5-8cd6-878400050be6",
+      "timestamp": "2026-10-11T06:18:55.283633+00:00",
+      "predicted_label": 1,
+      "prediction": "attack",
+      "severity": "high",
+      "confidence": 1.0,
+      "attack_probability": 1.0,
+      "detection_method": "supervised_random_forest",
+      "source_type": "dataset",
+      "explanation": "The supervised model classified this record as attack traffic. The confidence tier is a demonstration rule, not calibrated SOC severity."
+    }
+  },
+  {
+    "scenario": "recon_dataset_record",
+    "source_type": "dataset",
+    "expected_label": 1,
+    "predicted_label": 1,
+    "prediction": "attack",
+    "confidence": 1.0,
+    "attack_probability": 1.0,
+    "probability_is_calibrated": false,
+    "alert": {
+      "alert_id": "9d6f22f5-44a7-4853-b89b-55be50203e9b",
+      "timestamp": "2026-10-11T06:18:55.283652+00:00",
+      "predicted_label": 1,
+      "prediction": "attack",
+      "severity": "high",
+      "confidence": 1.0,
+      "attack_probability": 1.0,
+      "detection_method": "supervised_random_forest",
+      "source_type": "dataset",
+      "explanation": "The supervised model classified this record as attack traffic. The confidence tier is a demonstration rule, not calibrated SOC severity."
+    }
+  },
+  {
+    "scenario": "brute_force_like_repeated_connections_synthetic",
+    "source_type": "synthetic",
+    "expected_label": null,
+    "synthetic_note": "A normal dataset row was modified in verified traffic-count/rate fields for demonstration only; the dataset has no authentication-failure feature and this does not reproduce an attack.",
+    "predicted_label": 1,
+    "prediction": "attack",
+    "confidence": 0.68,
+    "attack_probability": 0.68,
+    "probability_is_calibrated": false,
+    "alert": {
+      "alert_id": "0c52bb74-3b38-477c-a1fa-68122abd9a0a",
+      "timestamp": "2026-10-11T06:18:55.283669+00:00",
+      "predicted_label": 1,
+      "prediction": "attack",
+      "severity": "medium",
+      "confidence": 0.68,
+      "attack_probability": 0.68,
+      "detection_method": "supervised_random_forest",
+      "source_type": "synthetic",
+      "explanation": "The supervised model classified this record as attack traffic. The confidence tier is a demonstration rule, not calibrated SOC severity."
+    }
+  },
+  {
+    "scenario": "high_rate_synthetic",
+    "source_type": "synthetic",
+    "expected_label": null,
+    "synthetic_note": "A normal dataset row was modified in verified traffic-count/rate fields for demonstration only; the dataset has no authentication-failure feature and this does not reproduce an attack.",
+    "predicted_label": 1,
+    "prediction": "attack",
+    "confidence": 0.789064935064935,
+    "attack_probability": 0.789064935064935,
+    "probability_is_calibrated": false,
+    "alert": {
+      "alert_id": "292de25f-06db-4364-befb-5a5942d73138",
+      "timestamp": "2026-10-11T06:18:55.283684+00:00",
+      "predicted_label": 1,
+      "prediction": "attack",
+      "severity": "medium",
+      "confidence": 0.789064935064935,
+      "attack_probability": 0.789064935064935,
+      "detection_method": "supervised_random_forest",
+      "source_type": "synthetic",
+      "explanation": "The supervised model classified this record as attack traffic. The confidence tier is a demonstration rule, not calibrated SOC severity."
+    }
+  }
+]

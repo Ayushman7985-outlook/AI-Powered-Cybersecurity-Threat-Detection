@@ -1,0 +1,36 @@
+# Python environments, bytecode, and test/tool caches
+.venv/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Frontend bundles and local frontend settings
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+frontend/.env.local
+frontend/.env.*.local
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+
+# Local datasets are not redistributed by this repository
+data/raw/*.csv
+data/processed/*
+data/synthetic/*
+
+# Locally trained binary model and private detection history
+models/*.joblib
+outputs/*.sqlite3
+outputs/*.sqlite3-*
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+{
+  "source_type": "dataset",
+  "split": "test",
+  "row_index": 0,
+  "dataset_label_for_comparison_only": 0,
+  "predicted_label": 1,
+  "prediction": "attack",
+  "confidence": 0.7406363636363636,
+  "attack_probability": 0.7406363636363636,
+  "probability_is_calibrated": false,
+  "alert": {
+    "alert_id": "8ac0a15a-b309-41ab-8096-577a6d4dde0a",
+    "timestamp": "2026-10-11T06:25:36.957897+00:00",
+    "predicted_label": 1,
+    "prediction": "attack",
+    "severity": "medium",
+    "confidence": 0.7406363636363636,
+    "attack_probability": 0.7406363636363636,
+    "detection_method": "supervised_random_forest",
+    "source_type": "dataset",
+    "explanation": "The supervised model classified this record as attack traffic. The confidence tier is a demonstration rule, not calibrated SOC severity."
+  }
+}
